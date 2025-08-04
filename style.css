@@ -1,91 +1,89 @@
 /* Import czcionki Ubuntu Bold */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 /* Nagłówek */
 header {
-    background: #0b2545; /* granatowy */
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 30px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    height: 60px;
+  background: #0b2545; /* granatowy */
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  height: 60px;
 }
 
 header .logo {
-    font-size: 22px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #f1c40f; /* złoty akcent */
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f1c40f; /* złoty akcent */
 }
 
 header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
+  list-style: none;
+  display: flex;
+  gap: 25px;
 }
 
 header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 700;
-    transition: color 0.3s, transform 0.2s;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s, transform 0.2s;
 }
 
 header nav ul li a:hover {
-    color: #f1c40f;
-    transform: scale(1.05);
+  color: #f1c40f;
+  transform: scale(1.05);
 }
 
 /* Sekcje */
 section {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
 }
 
 /* Sekcja powitalna */
 .hero {
-    background: linear-gradient(rgba(11,37,69,0.7), rgba(11,37,69,0.7)),
-                url('https://images.unsplash.com/photo-1593062096033-9f5d1e36e1b3') 
-                center/cover no-repeat;
-    color: white;
-    padding: 0 20px;
+  background: linear-gradient(rgba(11,37,69,0.7), rgba(11,37,69,0.7)),
+              url('https://images.unsplash.com/photo-1593062096033-9f5d1e36e1b3') 
+              center/cover no-repeat;
+  color: white;
+  padding: 0 20px;
 }
 
 .hero h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
-    font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  font-weight: 700;
 }
 
 .hero p {
-    font-size: 20px;
-    margin-bottom: 25px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
 /* Przyciski */
@@ -101,6 +99,8 @@ section {
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s, transform 0.2s;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -108,101 +108,101 @@ section {
 #kontakt .phone-btn:hover {
   background: #d4ac0d;
   transform: scale(1.05);
-  color: #0b2545; /* DODANE – żeby kolor się nie zmieniał */
+  color: #0b2545; /* żeby kolor się nie zmieniał */
 }
 
 h2 {
-    font-size: 30px;
-    margin-bottom: 25px;
-    color: #0b2545;
-    position: relative;
-    font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #0b2545;
+  position: relative;
+  font-weight: 700;
 }
 
 h2::after {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #f1c40f;
-    margin: 10px auto 0;
-    border-radius: 3px;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #f1c40f;
+  margin: 10px auto 0;
+  border-radius: 3px;
 }
 
 /* Karty usług */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
 .card {
-    background: #ffffffcc;
-    padding: 25px;
-    border-radius: 16px;
-    box-shadow: 0 6px 15px rgba(11,37,69,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background: #ffffffcc;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(11,37,69,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 10px 25px rgba(11,37,69,0.2);
+  transform: translateY(-7px);
+  box-shadow: 0 10px 25px rgba(11,37,69,0.2);
 }
 
 .card h3 {
-    font-size: 20px;
-    color: #0b2545;
-    margin-bottom: 12px;
-    font-weight: 700;
+  font-size: 20px;
+  color: #0b2545;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .card p {
-    font-size: 15px;
-    color: #444;
-    margin-bottom: 12px;
+  font-size: 15px;
+  color: #444;
+  margin-bottom: 12px;
 }
 
 .card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 15px;
 }
 
 .card ul li {
-    font-size: 14px;
-    color: #0b2545;
-    background: #f1c40f;
-    padding: 6px 14px;
-    border-radius: 20px;
-    white-space: nowrap;
-    transition: background 0.3s, color 0.3s;
-    cursor: default;
+  font-size: 14px;
+  color: #0b2545;
+  background: #f1c40f;
+  padding: 6px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+  transition: background 0.3s, color 0.3s;
+  cursor: default;
 }
 
 .card ul li:hover {
-    background: #d4ac0d;
-    color: #0b2545;
+  background: #d4ac0d;
+  color: #0b2545;
 }
 
 /* Stopka */
 footer {
-    background: linear-gradient(rgba(106, 171, 250, 0.9), rgba(11,37,69,0.9));
-    color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    margin-top: 50px;
-    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+  background: linear-gradient(rgba(106, 171, 250, 0.9), rgba(11,37,69,0.9));
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 50px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
 }
 
 /* Hamburger */
@@ -252,95 +252,110 @@ footer {
   }
 }
 
-/* Efekt krzyżyka */
+/* Animacja hamburgera otwartego */
 .hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translateY(8px);
+  transform: rotate(45deg) translate(5px, 6px);
 }
+
 .hamburger.open span:nth-child(2) {
   opacity: 0;
 }
+
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translateY(-8px);
+  transform: rotate(-45deg) translate(5px, -6px);
 }
 
 /* Sekcja kontakt */
+
 #kontakt {
-  max-width: 500px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #ffffffcc;
-  border-radius: 16px;
-  box-shadow: 0 6px 15px rgba(11,37,69,0.1);
-}
-
-#kontakt h2 {
-  text-align: center;
-  margin-bottom: 20px;
+  background: linear-gradient(135deg, #0b2545 0%, #f1c40f 100%);
+  padding: 40px 20px;
   color: #0b2545;
-}
-
-#kontakt p, 
-#kontakt ul {
-  margin-bottom: 15px;
-  color: #333;
-  font-size: 16px;
-}
-
-#kontakt ul {
-  list-style: none;
-  padding: 0;
-}
-
-#kontakt li {
-  margin: 5px 0;
-  font-size: 18px;
-}
-
-#kontakt form {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
-#kontakt label {
+.kontakt-box {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(11,37,69,0.15);
+  max-width: 450px;
+  width: 100%;
   text-align: left;
-  font-weight: 700;
-  color: #444;
 }
 
-#kontakt input,
-#kontakt textarea {
-  padding: 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  transition: border-color 0.3s;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-#kontakt input:focus,
-#kontakt textarea:focus {
-  border-color: #f1c40f;
-  outline: none;
-}
-
-#kontakt a {
+.kontakt-box h2 {
   color: #0b2545;
+  margin-bottom: 15px;
+}
+
+.kontakt-box p {
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.phone-btn {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding: 14px 24px;
+  background: #f1c40f;
+  color: #0b2545;
+  border-radius: 30px;
   font-weight: 700;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: background 0.3s, transform 0.2s;
+  border: none;
+  cursor: pointer;
 }
 
-#kontakt a:hover {
-  color: #f1c40f;
+.phone-btn:hover {
+  background: #d4ac0d;
+  transform: scale(1.05);
+  color: #0b2545;
 }
 
-#o-mnie {
-    background: linear-gradient(rgba(11,37,69,0.9), rgba(106, 171, 250, 0.9));
-    color: white;
+/* Formularz */
+form label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 7px;
+  color: #0b2545;
 }
 
-#uslugi {
-    background: linear-gradient(rgba(106, 171, 250, 0.9), rgba(11,37,69,0.9));
-    color: white;
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 20px;
+  border: 2px solid #0b2545;
+  border-radius: 10px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 15px;
+  transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #f1c40f;
+}
+
+form button {
+  width: 100%;
+  background: #f1c40f;
+  color: #0b2545;
+  padding: 15px 0;
+  border-radius: 30px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #d4ac0d;
+  transform: scale(1.05);
 }
