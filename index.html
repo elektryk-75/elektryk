@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elektryk - Marek Jankowski</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">⚡ Elektryk Marek Jankowski</div>
+        <nav>
+            <ul>
+                <li><a href="#start">Start</a></li>
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#uslugi">Usługi</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+<section class="hero" id="start">
+    <h1>Twój Zaufany Elektryk</h1>
+    <p>Profesjonalna pomoc elektryczna w Twoim domu i firmie.</p>
+    <a href="#kontakt" class="btn">Zadzwoń teraz</a>
+</section>
+
+    <section id="o-mnie">
+        <h2>O mnie</h2>
+        <p>
+            Nazywam się Marek Jankowski i od ponad 10 lat zajmuję się profesjonalnymi usługami elektrycznymi. 
+            Gwarantuję rzetelną i szybką obsługę, zawsze dbając o bezpieczeństwo i satysfakcję klienta.
+        </p>
+    </section>
+
+<section id="uslugi">
+    <h2>Usługi</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Naprawy Awaryjne</h3>
+            <p>Szybka pomoc w razie awarii i problemów z elektryką.</p>
+            <ul>
+                <li>Usuwanie zwarć i przeciążeń</li>
+                <li>Naprawa gniazdek i włączników</li>
+                <li>Wymiana bezpieczników</li>
+                <li>Usuwanie przepięć</li>
+                <li>Naprawa oświetlenia awaryjnego</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Naprawy Sprzętu</h3>
+            <p>Kompleksowa analiza i naprawa sprzętu elektronicznego.</p>
+            <ul>
+                <li>Hulajnogi elektryczne</li>
+                <li>Diagnoza i naprawa urządzeń AGD</li>
+                <li>Serwis bojlerów i podgrzewaczy wody</li>
+                <li>Konserwacja urządzeń elektrycznych</li>
+                <li>Wymiana kabli zasilających</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Modernizacje</h3>
+            <p>Wymiana starych instalacji i dostosowanie ich do nowych standardów.</p>
+            <ul>
+                <li>Wymiana instalacji</li>
+                <li>Instalacja nowoczesnych bezpieczników</li>
+                <li>Instalacja nowych urządzeń</li>
+                <li>Modernizacja tablic rozdzielczych</li>
+                <li>Wymiana przewodów i osprzętu</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Pomiary i Kontrole</h3>
+            <p>Profesjonalne pomiary bezpieczeństwa elektrycznego.</p>
+            <ul>
+                <li>Pomiary rezystancji izolacji</li>
+                <li>Sprawdzenie skuteczności uziemienia</li>
+                <li>Testy wyłączników różnicowoprądowych</li>
+                <li>Pomiary natężenia oświetlenia</li>
+                <li>Przeglądy okresowe instalacji</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+        <p>Zadzwoń — odpowiem najszybciej, jak to możliwe.</p>
+        <ul>
+            <li>📞 +48 513 249 075</li>
+            <li>    jankowskimisiek688@interia.pl</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>© 2025 Elektryk Marek Jankowski. Wszystkie prawa pod napięciem ⚡</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector("header nav");
+
+    hamburger.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+    hamburger.classList.toggle("open");
+  });
+
+  // Zamknij menu po kliknięciu na link
+    navMenu.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+        hamburger.classList.remove("open");
+    });
+  });
+});
+</script>
+</body>
+</html>
