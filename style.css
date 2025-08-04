@@ -336,6 +336,12 @@ footer {
   transition: color 0.3s;
 }
 
+#o-mnie {
+    background: linear-gradient(rgba(11,37,69,0.9), rgba(106, 171, 250, 0.9));
+    color: white;
+}
+
+
 #kontakt a:hover {
   color: #f1c40f;
 }
