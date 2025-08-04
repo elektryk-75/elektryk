@@ -96,25 +96,27 @@
 
 
 <section id="kontakt">
-  <h2>Kontakt</h2>
-  <p>Zadzwoń lub napisz wiadomość — odpowiem najszybciej, jak to możliwe.</p>
+  <div class="kontakt-box">
+    <h2>Kontakt</h2>
+    <p>Zadzwoń lub napisz wiadomość — odpowiem najszybciej, jak to możliwe.</p>
 
-  <div>
-    <a href="tel:+48513249075" class="phone-btn">📞 Zadzwoń: +48 513 249 075</a>
+    <div>
+      <a href="tel:+48513249075" class="phone-btn">📞 Zadzwoń: +48 513 249 075</a>
+    </div>
+
+    <form action="https://formspree.io/f/mrblawbb" method="POST">
+      <label for="name">Imię:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Twój e-mail:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Wiadomość:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Wyślij</button>
+    </form>
   </div>
-
-  <form action="https://formspree.io/f/mrblawbb" method="POST">
-    <label for="name">Imię:</label>
-    <input type="text" id="name" name="name" required>
-
-    <label for="email">Twój e-mail:</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="message">Wiadomość:</label>
-    <textarea id="message" name="message" rows="5" required></textarea>
-
-    <button type="submit">Wyślij</button>
-  </form>
 </section>
 
     <footer>
