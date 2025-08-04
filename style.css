@@ -15,7 +15,7 @@ body {
 
 /* Nagłówek */
 header {
-  background: #0b2545; /* granatowy */
+  background: linear-gradient(rgba(31, 112, 210, 0.9), rgba(106, 171, 250, 0.9));
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -29,10 +29,10 @@ header {
 }
 
 header .logo {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: 700;
-  letter-spacing: 1px;
-  color: #f1c40f; /* złoty akcent */
+  letter-spacing: 1.5px;
+  color: #ffe600; /* złoty akcent */
 }
 
 header nav ul {
@@ -66,32 +66,42 @@ section {
 
 
 #o-mnie {
-    background: linear-gradient(rgba(11,37,69,0.9), rgba(106, 171, 250, 0.9));
+    background: linear-gradient(rgba(31, 112, 210, 0.9), rgba(106, 171, 250, 0.9));
     color: white;
+    font-size: 20px;
 }
 
 #uslugi {
-    background: linear-gradient(rgba(106, 171, 250, 0.9), rgba(11,37,69,0.9));
+    background: linear-gradient(rgba(106, 171, 250, 0.9), rgba(31, 112, 210, 0.9));
     color: white;
+    font-size: 20px;
 }
 /* Sekcja powitalna */
 .hero {
-  background: linear-gradient(rgba(11,37,69,0.7), rgba(11,37,69,0.7)),
-              url('https://images.unsplash.com/photo-1593062096033-9f5d1e36e1b3') 
-              center/cover no-repeat;
+  background: linear-gradient(rgba(106, 171, 250, 0.9), rgba(31, 112, 210, 0.9));
   color: white;
   padding: 0 20px;
 }
 
 .hero h1 {
-  font-size: 42px;
+  font-size: 50px;
   margin-bottom: 15px;
   text-shadow: 0 2px 6px rgba(0,0,0,0.7);
   font-weight: 700;
 }
 
+h1::after {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 3px;
+  background: #f1c40f;
+  margin: 10px auto 0;
+  border-radius: 3px;
+}
+
 .hero p {
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 25px;
   text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
@@ -122,7 +132,7 @@ section {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 25px;
   color: #0b2545;
   position: relative;
@@ -130,9 +140,9 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 25px;
-  color: white;
+  color: #0b2545;
   position: relative;
   font-weight: 700;
 }
@@ -140,7 +150,7 @@ h3 {
 h2::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 120px;
   height: 3px;
   background: #f1c40f;
   margin: 10px auto 0;
@@ -150,7 +160,7 @@ h2::after {
 h3::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 120px;
   height: 3px;
   background: #f1c40f;
   margin: 10px auto 0;
@@ -184,14 +194,14 @@ h3::after {
 }
 
 .card h3 {
-  font-size: 20px;
+  font-size: 24px;
   color: #0b2545;
   margin-bottom: 12px;
   font-weight: 700;
 }
 
 .card p {
-  font-size: 15px;
+  font-size: 18px;
   color: #444;
   margin-bottom: 12px;
 }
@@ -207,7 +217,7 @@ h3::after {
 }
 
 .card ul li {
-  font-size: 14px;
+  font-size: 15px;
   color: #0b2545;
   background: #f1c40f;
   padding: 6px 14px;
@@ -296,7 +306,7 @@ footer {
 /* Sekcja kontakt */
 
 #kontakt {
-    background: linear-gradient(rgba(11,37,69,0.9), rgba(106, 171, 250, 0.9));
+    background: linear-gradient(rgba(31, 112, 210, 0.9), rgba(106, 171, 250, 0.9));
     color: white;  /* Kolory tekstu na gradientowym tle */
     padding: 40px 20px;
     display: flex;
