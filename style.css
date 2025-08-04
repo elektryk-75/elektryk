@@ -1,3 +1,6 @@
+/* Import czcionki Ubuntu Bold */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +9,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
@@ -23,12 +27,12 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-    height: 60px; /* dla pewności */
+    height: 60px;
 }
 
 header .logo {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 1px;
     color: #f1c40f; /* złoty akcent */
 }
@@ -42,23 +46,23 @@ header nav ul {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     transition: color 0.3s, transform 0.2s;
 }
 
 header nav ul li a:hover {
-    color: #f1c40f; /* złoty */
+    color: #f1c40f;
     transform: scale(1.05);
 }
 
-/* Sekcje - pełny ekran i centrowanie */
+/* Sekcje */
 section {
-    min-height: 100vh; /* pełna wysokość widoku */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* pionowe centrowanie */
-    align-items: center;     /* poziome centrowanie */
-    padding: 20px;           /* lekki padding, żeby nie przyklejało się do krawędzi */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     text-align: center;
 }
 
@@ -68,13 +72,14 @@ section {
                 url('https://images.unsplash.com/photo-1593062096033-9f5d1e36e1b3') 
                 center/cover no-repeat;
     color: white;
-    padding: 0 20px; /* usuń górny i dolny padding, bo 100vh już jest */
+    padding: 0 20px;
 }
 
 .hero h1 {
     font-size: 42px;
     margin-bottom: 15px;
     text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+    font-weight: 700;
 }
 
 .hero p {
@@ -83,17 +88,26 @@ section {
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
 }
 
-.btn {
-    background: #f1c40f; /* złoty */
-    color: #0b2545; /* granatowy */
+/* Przyciski */
+.btn, 
+#kontakt button,
+#kontakt .phone-btn {
+    background: #f1c40f; 
+    color: #0b2545; 
     padding: 12px 30px;
     border-radius: 30px;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
     transition: background 0.3s, transform 0.2s;
 }
 
-.btn:hover {
+.btn:hover,
+#kontakt button:hover,
+#kontakt .phone-btn:hover {
     background: #d4ac0d;
     transform: scale(1.05);
 }
@@ -101,8 +115,9 @@ section {
 h2 {
     font-size: 30px;
     margin-bottom: 25px;
-    color: #0b2545; /* granat */
+    color: #0b2545;
     position: relative;
+    font-weight: 700;
 }
 
 h2::after {
@@ -110,7 +125,7 @@ h2::after {
     display: block;
     width: 60px;
     height: 3px;
-    background: #f1c40f; /* złoty */
+    background: #f1c40f;
     margin: 10px auto 0;
     border-radius: 3px;
 }
@@ -129,10 +144,10 @@ h2::after {
 }
 
 .card {
-    background: #ffffffcc; /* biel z lekką przezroczystością */
+    background: #ffffffcc;
     padding: 25px;
     border-radius: 16px;
-    box-shadow: 0 6px 15px rgba(11,37,69,0.1); /* delikatny cień granatu */
+    box-shadow: 0 6px 15px rgba(11,37,69,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center; 
     display: flex;
@@ -148,8 +163,9 @@ h2::after {
 
 .card h3 {
     font-size: 20px;
-    color: #0b2545; /* granat */
+    color: #0b2545;
     margin-bottom: 12px;
+    font-weight: 700;
 }
 
 .card p {
@@ -158,7 +174,6 @@ h2::after {
     margin-bottom: 12px;
 }
 
-/* Lista przykładów w jednej linii */
 .card ul {
     list-style: none;
     padding: 0;
@@ -171,8 +186,8 @@ h2::after {
 
 .card ul li {
     font-size: 14px;
-    color: #0b2545; /* granat */
-    background: #f1c40f; /* złoty */
+    color: #0b2545;
+    background: #f1c40f;
     padding: 6px 14px;
     border-radius: 20px;
     white-space: nowrap;
@@ -187,7 +202,7 @@ h2::after {
 
 /* Stopka */
 footer {
-    background: #0b2545; /* granat */
+    background: #0b2545;
     color: white;
     text-align: center;
     padding: 20px;
@@ -196,7 +211,7 @@ footer {
     box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
 }
 
-/* Hamburger - ukryty na desktopie */
+/* Hamburger */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -243,7 +258,7 @@ footer {
   }
 }
 
-/* Efekt zamiany w krzyżyk */
+/* Efekt krzyżyka */
 .hamburger.open span:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
 }
@@ -253,6 +268,7 @@ footer {
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translateY(-8px);
 }
+
 /* Sekcja kontakt */
 #kontakt {
   max-width: 500px;
@@ -294,7 +310,7 @@ footer {
 
 #kontakt label {
   text-align: left;
-  font-weight: bold;
+  font-weight: 700;
   color: #444;
 }
 
@@ -305,6 +321,7 @@ footer {
   border: 1px solid #ccc;
   border-radius: 8px;
   transition: border-color 0.3s;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 #kontakt input:focus,
@@ -313,46 +330,13 @@ footer {
   outline: none;
 }
 
-#kontakt button {
-  padding: 14px;
-  font-size: 16px;
-  color: #0b2545;
-  background: #f1c40f;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.3s, transform 0.2s;
-}
-
-#kontakt button:hover {
-  background: #d4ac0d;
-  transform: scale(1.05);
-}
 #kontakt a {
   color: #0b2545;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 #kontakt a:hover {
   color: #f1c40f;
-}
-
-#kontakt .phone-btn {
-  display: inline-block;
-  padding: 14px 24px;
-  font-size: 16px;
-  color: #0b2545;
-  background: #f1c40f;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
-}
-
-#kontakt .phone-btn:hover {
-  background: #d4ac0d;
-  transform: scale(1.05);
 }
