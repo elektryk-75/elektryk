@@ -359,3 +359,12 @@ form button:hover {
   background: #d4ac0d;
   transform: scale(1.05);
 }
+#o-mnie {
+    background: linear-gradient(rgba(11,37,69,0.9), rgba(106, 171, 250, 0.9));
+    color: white;
+}
+
+#uslugi {
+    background: linear-gradient(rgba(106, 171, 250, 0.9), rgba(11,37,69,0.9));
+    color: white;
+}
