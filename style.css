@@ -5,11 +5,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     line-height: 1.6;
     background-color: #f9f9f9;
     color: #333;
-
 }
 
 /* Nagłówek */
