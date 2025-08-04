@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+
+}
+
+/* Nagłówek */
+header {
+    background: #0b2545; /* granatowy */
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    height: 60px; /* dla pewności */
+}
+
+header .logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #f1c40f; /* złoty akcent */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.2s;
+}
+
+header nav ul li a:hover {
+    color: #f1c40f; /* złoty */
+    transform: scale(1.05);
+}
+
+/* Sekcje - pełny ekran i centrowanie */
+section {
+    min-height: 100vh; /* pełna wysokość widoku */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* pionowe centrowanie */
+    align-items: center;     /* poziome centrowanie */
+    padding: 20px;           /* lekki padding, żeby nie przyklejało się do krawędzi */
+    text-align: center;
+}
+
+/* Sekcja powitalna */
+.hero {
+    background: linear-gradient(rgba(11,37,69,0.7), rgba(11,37,69,0.7)),
+                url('https://images.unsplash.com/photo-1593062096033-9f5d1e36e1b3') 
+                center/cover no-repeat;
+    color: white;
+    padding: 0 20px; /* usuń górny i dolny padding, bo 100vh już jest */
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+}
+
+.btn {
+    background: #f1c40f; /* złoty */
+    color: #0b2545; /* granatowy */
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #d4ac0d;
+    transform: scale(1.05);
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: #0b2545; /* granat */
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #f1c40f; /* złoty */
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+/* Karty usług */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+#uslugi {
+    background: linear-gradient(rgba(106, 171, 250, 0.9), rgba(11,37,69,0.9));
+    color: white;
+}
+
+.card {
+    background: #ffffffcc; /* biel z lekką przezroczystością */
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 6px 15px rgba(11,37,69,0.1); /* delikatny cień granatu */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(11,37,69,0.2);
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #0b2545; /* granat */
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+/* Lista przykładów w jednej linii */
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 15px;
+}
+
+.card ul li {
+    font-size: 14px;
+    color: #0b2545; /* granat */
+    background: #f1c40f; /* złoty */
+    padding: 6px 14px;
+    border-radius: 20px;
+    white-space: nowrap;
+    transition: background 0.3s, color 0.3s;
+    cursor: default;
+}
+
+.card ul li:hover {
+    background: #d4ac0d;
+    color: #0b2545;
+}
+
+/* Stopka */
+footer {
+    background: #0b2545; /* granat */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 50px;
+    box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+}
+
+/* Hamburger - ukryty na desktopie */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Responsywne menu */
+@media (max-width: 768px) {
+  header nav {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #0b2545;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  header nav.active {
+    max-height: 300px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Efekt zamiany w krzyżyk */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
