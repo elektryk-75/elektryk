@@ -265,13 +265,12 @@ footer {
 
 /* Sekcja kontakt */
 #kontakt {
-    max-width: 500px;
-    margin: 40px auto;
-    padding: 20px;
-    background: linear-gradient(rgba(11,37,69,0.9), rgba(106, 171, 250, 0.9));
-    border-radius: 16px;
-    box-shadow: 0 6px 15px rgba(11,37,69,0.1);
-    color: white;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffffcc;
+  border-radius: 16px;
+  box-shadow: 0 6px 15px rgba(11,37,69,0.1);
 }
 
 #kontakt h2 {
