@@ -340,3 +340,20 @@ footer {
 #kontakt a:hover {
   color: #f1c40f;
 }
+
+#kontakt .phone-btn {
+  display: inline-block;
+  padding: 14px 24px;
+  font-size: 16px;
+  color: #0b2545;
+  background: #f1c40f;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#kontakt .phone-btn:hover {
+  background: #d4ac0d;
+  transform: scale(1.05);
+}
