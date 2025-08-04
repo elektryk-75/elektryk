@@ -330,3 +330,13 @@ footer {
   background: #d4ac0d;
   transform: scale(1.05);
 }
+#kontakt a {
+  color: #0b2545;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#kontakt a:hover {
+  color: #f1c40f;
+}
