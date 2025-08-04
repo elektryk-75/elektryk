@@ -346,6 +346,7 @@ footer {
   transition: background 0.3s, transform 0.2s;
   border: none;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .phone-btn:hover {
